@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
   home: NinjaCard(),
 ));
 class  NinjaCard extends StatelessWidget {
@@ -10,7 +11,7 @@ class  NinjaCard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text('THAPATHALI CAMPUS ID CARD '),
+        title: Text(' CAMPUS ID CARD '),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
@@ -24,11 +25,11 @@ class  NinjaCard extends StatelessWidget {
               children:[
 
                 Container(
-                  width: 70,
-                  height: 70,
+                  width: 62,
+                  height: 62,
                   child: Image.asset('assets/QRfb.png'),
                 ),
-                SizedBox(width:20),
+                SizedBox(width:15),
                 Container(
                   child: Center(
                     child: CircleAvatar(
@@ -42,23 +43,26 @@ class  NinjaCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width:10.0),
-                Column(
-                  children:[
-                    Text('Email:info@tcioe.edu.np',
-                    style: TextStyle(
-                      color: Colors.grey,
-                      letterSpacing: 0.0,
-                      fontSize: 15.0,
-                    ),
-                  ),
-                    Text('Expiry Date :2082-01-16',
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    children:[
+                      Text('Email:info@tcioe.edu.np',
                       style: TextStyle(
                         color: Colors.grey,
                         letterSpacing: 0.0,
                         fontSize: 15.0,
                       ),
                     ),
+                      Text('Expiry Date :2082-04-26',
+                        style: TextStyle(
+                          color: Colors.grey,
+                          letterSpacing: 0.0,
+                          fontSize: 15.0,
+                        ),
+                      ),
         ],
+                  ),
                 ),
 
 
@@ -114,7 +118,7 @@ class  NinjaCard extends StatelessWidget {
                ),
 
                 Center(
-                  child:  Text('THA077BCT015 ',
+                  child:  Text('THA077BIE050 ',
                     style: TextStyle(
                       color: Colors.white,
                       letterSpacing: 2.0,
@@ -136,28 +140,28 @@ class  NinjaCard extends StatelessWidget {
                 SizedBox(height: 20.0,),
 
 
-                Text('Date of Birth : 2058/06/13',
+                Text('Date of Birth : 2058/08/23',
                   style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2.0,
                     fontSize: 19.0,
                   ),
                 ),
-                Text('Address : TILOTTAMA-11, Rupandehi',
+                Text('Address : Butwal, Rupandehi',
                   style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2.0,
                     fontSize: 19.0,
                   ),
                 ),
-                Text('Contact number : 9869939258',
+                Text('Contact number : 980000000',
                   style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2.0,
                     fontSize: 19.0,
                   ),
                 ),
-                Text('PP/LID/CTZ NO :37-01-76-12899',
+                Text('Citizen No.  :37-02-78-42679',
                   style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2.0,
@@ -174,7 +178,7 @@ class  NinjaCard extends StatelessWidget {
                     ),
                     SizedBox(width: 10.0),
                     Text(
-                      'bidhanacharya999@gmail.com',
+                      'davidcharya999@gmail.com',
                       style: TextStyle(
                         color: Colors.grey[400],
                         fontSize: 17.0,
@@ -185,11 +189,13 @@ class  NinjaCard extends StatelessWidget {
                     )
                   ],
                 ),
-            Container(
-              width: 500,
-              height: 150,
+            Expanded(
+              child: Container(
+                width: 500,
+                height: 150,
 
-              child: Image.asset('assets/bar.png'),
+                child: Image.asset('assets/bar.png'),
+              ),
             ),
 
 
